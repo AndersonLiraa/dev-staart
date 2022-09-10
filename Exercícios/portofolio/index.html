@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
-@import url('https://fonts.googleapis.com/css2? família= Noto+Sans+Avestan & display=swap');
+          body{
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          main{
+            display: grid;
+            grid-template-areas: 'um dois';
+            grid-template-columns: auto 400px;
+          }
+          section{
+            grid-area: 'um';
+          }
+          aside{
+            grid-area: 'dois';
+          }
 
         header{
             background-color: rgb(155, 155, 155);
@@ -15,7 +29,7 @@
         h1,h2{ 
             text-align: center;
             padding-bottom: 20px;
-            font-family:'Noto Sans Avestan' ;
+            font-family:'Sedgwick Ave', cursive, serif;
             
         }
         article#formação{
@@ -41,6 +55,14 @@
              background-color: rgb(0, 162, 255);
              padding: 20px;
         }
+        
+       @media screen and ( max-width: 1024px) {
+        main{
+            display: block;
+        }
+       }
+        
+
 
     </style>
 </head>
